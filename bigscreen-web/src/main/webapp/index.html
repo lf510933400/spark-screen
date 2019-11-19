@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>李峰大数据</title>
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/cao.css" rel="stylesheet">
+    <script src="js/echarts.min.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/d3.js"></script>
+</head>
+<body>
+<div >
+        <div class="row-fluid">
+            <!--第一列-->
+            <div class='cao_charts_left col-md-3'>
+                <!--第一列　第一行-->
+                <div style="font-size: 18px;color: #f2b04a;font-family:Fantasy;">店铺销售额排行</div>
+                <div class="cao_charts_left_container_1" id="cao_charts_left_1">
+                    <div class="row" style="text-align:center;font-size: 14px;color: #f0f0f3;border-bottom: dotted 1px #3dd3f8">
+                        <div class="col-md-4" style="width: 18%;">排名</div>
+                        <div class="col-md-4" style="width: 50%;">店铺名称</div>
+                        <div class="col-md-4" style="width: 30%;">销售额(元)</div>
+                    </div>
+                    <div id="kfk_shop_ranking"></div>
+
+                </div>
+
+                <!--第一列　第二行-->
+                <div style="font-size: 18px;color: #f2b04a;font-family:Fantasy;line-height: 40px;padding-bottom: 0px">最受欢迎的商品</div>
+                <div class="cao_charts_left_container_2"  id="cao_charts_left_2"></div>
+
+                <!--第一列　第三行-->
+                <div style="font-size: 18px;color: #f2b04a;font-family:Fantasy;line-height: 40px">商品排行</div>
+                <div class="cao_charts_left_container_3" id="cao_charts_left_3">
+                    <div class="row" style="text-align:center;font-size: 14px;color: #f0f0f3;border-bottom: dotted 1px #3dd3f8">
+                        <div class="col-md-4" style="width: 18%;">排名</div>
+                        <div class="col-md-4" style="width: 50%;">商品名称</div>
+                        <div class="col-md-4" style="width: 30%;">销售额(元)</div>
+                    </div>
+
+                    <div class="row" style="margin-bottom: 5px;margin-top: 10px;line-height:30px;">
+                        <div class="col-md-4" style="width: 15%;text-align:center;vertical-align:middle;line-height:25px;color: #3dd3f8">
+                            <div class="circle" style="background-color: #f8fb05">1</div>
+                        </div>
+                        <div class="col-md-4" style="width: 50%;background-color: rgba(8,158,195,0.2);text-align:left;color: #3dd3f8">美奈琪化妆刷制品厂</div>
+                        <div class="col-md-4" style="width: 30%;text-align:center;line-height:25px;color: #3dd3f8">350015</div>
+                    </div>
+
+                    <div class="row" style="margin-bottom: 5px;line-height:30px;">
+                        <div class="col-md-4" style="width: 15%;text-align:center;line-height:25px;color: #3dd3f8">
+                            <div class="circle" style="background-color: #fbc403">2</div></div>
+                        <div class="col-md-4" style="width: 50%;background-color: rgba(8,158,195,0.2);text-align:left;color: #3dd3f8">成梦科技手机店</div>
+                        <div class="col-md-4" style="width: 30%;text-align:center;color: #3dd3f8">310305</div>
+                    </div>
+
+                    <div class="row" style="margin-bottom: 5px;line-height:30px;">
+                        <div class="col-md-4" style="width: 15%;text-align:center;line-height:25px;color: #3dd3f8">
+                            <div class="circle" style="background-color: #c79b03">3</div></div>
+                        <div class="col-md-4" style="width: 50%;background-color: rgba(8,158,195,0.2);text-align:left;color: #3dd3f8">花花公子乔峰店</div>
+                        <div class="col-md-4" style="width: 30%;text-align:center;color: #3dd3f8">265501</div>
+                    </div>
+
+
+                    <div class="row" style="margin-bottom: 5px;line-height:30px;">
+                        <div class="col-md-4" style="width: 15%;text-align:center;line-height:25px;color: #3dd3f8"><div class="circle">4</div></div>
+                        <div class="col-md-4" style="width: 50%;background-color: rgba(8,158,195,0.2);text-align:left;color: #3dd3f8">中国移动4G店</div>
+                        <div class="col-md-4" style="width: 30%;text-align:center;color: #3dd3f8">256911</div>
+                    </div>
+
+
+
+                    <div class="row" style="margin-bottom: 5px;line-height:30px;">
+                        <div class="col-md-4" style="width: 15%;text-align:center;line-height:25px;color: #3dd3f8"><div class="circle">5</div></div>
+                        <div class="col-md-4" style="width: 50%;background-color: rgba(8,158,195,0.2);text-align:left;color: #3dd3f8">彬尚旅行箱</div>
+                        <div class="col-md-4" style="width: 30%;text-align:center;color: #3dd3f8">230025</div>
+                    </div>
+
+                    <div class="row" style="margin-bottom: 5px;line-height:30px;">
+                        <div class="col-md-4" style="width: 15%;text-align:center;line-height:25px;color: #3dd3f8"><div class="circle">6</div></div>
+                        <div class="col-md-4" style="width: 50%;background-color: rgba(8,158,195,0.2);text-align:left;color: #3dd3f8">深圳市穗雅贸易有限公司</div>
+                        <div class="col-md-4" style="width: 30%;text-align:center;color: #3dd3f8">180025</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--中间列-->
+            <div class='cao_charts_title col-md-6'>
+
+                <div style="text-align: center;padding-top: 1em">
+                   <img src="images/title.png" >
+                </div>
+
+                <div style="text-align: center;margin:0 auto;padding-top: 1.3em;">
+
+                        <i class="fa fa-rmb" style="font-size: 3em;color: #fad573"></i>&nbsp;
+                    <span id = "sum" style="-webkit-border-radius: 5px;-moz-border-radius: 5px;width:100px;font-size: 6em;color: #fbf399;font-family:Fantasy;
+                    text-shadow:6px 2px 6px #565653;" >13,238,33.09&nbsp;</span>
+
+                </div>
+
+                <div style="text-align: center;padding-top: 2em;">
+                  <span style="font-size: 20px;color: #fae605;font-family:Fantasy;">
+                      初步数据：未经审计，数据由<span style="color: #3dd3f8"> 李峰大数据 </span>项目研发部提供并进行分析
+                  </span>
+                </div>
+
+                <div class="cao_charts_center_container" style="margin-top: 3em;">
+                    <div id="div-center" style="height: 650px"></div>
+                </div>
+
+            </div>
+
+
+            <!--第三列-->
+            <div class='cao_charts_right col-md-3'>
+                <div style="font-size: 18px;color: #f2b04a;font-family:Fantasy;">销售量趋势</div>
+                <div class="cao_charts_right_container_1" id="cao_charts_right_1"></div>
+
+                <div style="font-size: 18px;color: #f2b04a;font-family:Fantasy;line-height: 40px;">消费区域排行</div>
+                <div class="cao_charts_right_container_2" id="cao_charts_right_2">
+                    <div class="row">
+                        <div class="col-lg-6" style="width: 30%;color: #fff;text-align: left">省份排名</div>
+                        <div class="col-lg-6" style="width: 60%;padding-left:2em;color: #fff;text-align: left">城市排名</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6" style="width: 30%">
+                            <div class="row" style="margin-bottom: 5px;margin-top: 10px;line-height:20px;">
+                                <div class="col-md-6" style="width: 15%;text-align:center;vertical-align:middle;line-height:25px;color: #3dd3f8">
+                                    <div class="circle_country" style="background-color: #f8fb05">1</div>
+                                </div>
+                                <div class="col-md-6" style="margin-left: 20px;background-color: rgba(8,158,195,0.2);text-align:center;color: #3dd3f8">浙江</div>
+                            </div>
+
+                            <div class="row" style="margin-bottom: 5px;margin-top: 10px;line-height:20px;">
+                                <div class="col-md-6" style="width: 15%;text-align:center;vertical-align:middle;line-height:25px;color: #3dd3f8">
+                                    <div class="circle_country" style="background-color: #fbc403">2</div>
+                                </div>
+                                <div class="col-md-6" style="margin-left: 20px;background-color: rgba(8,158,195,0.2);text-align:center;color: #3dd3f8">广东</div>
+                            </div>
+
+
+                            <div class="row" style="margin-bottom: 5px;margin-top: 10px;line-height:20px;">
+                                <div class="col-md-6" style="width: 15%;text-align:center;vertical-align:middle;line-height:25px;color: #3dd3f8">
+                                    <div class="circle_country" style="background-color: #c79b03">3</div>
+                                </div>
+                                <div class="col-md-6" style="margin-left: 20px;background-color: rgba(8,158,195,0.2);text-align:center;color: #3dd3f8">福建</div>
+                            </div>
+
+                            <div class="row" style="margin-bottom: 5px;margin-top: 10px;line-height:20px;">
+                                <div class="col-md-6" style="width: 15%;text-align:center;vertical-align:middle;line-height:25px;color: #3dd3f8">
+                                    <div class="circle_country" style="background-color: #3dd3f8">4</div>
+                                </div>
+                                <div class="col-md-6" style="margin-left: 20px;background-color: rgba(8,158,195,0.2);text-align:center;color: #3dd3f8">江苏</div>
+                            </div>
+                            <div class="row" style="margin-bottom: 5px;margin-top: 10px;line-height:20px;">
+                                <div class="col-md-6" style="width: 15%;text-align:center;vertical-align:middle;line-height:25px;color: #3dd3f8">
+                                    <div class="circle_country" style="background-color: #3dd3f8">5</div>
+                                </div>
+                                <div class="col-md-6" style="margin-left: 20px;background-color: rgba(8,158,195,0.2);text-align:center;color: #3dd3f8">湖北</div>
+                            </div>
+                            <div class="row" style="margin-bottom: 5px;margin-top: 10px;line-height:20px;">
+                                <div class="col-md-6" style="width: 15%;text-align:center;vertical-align:middle;line-height:25px;color: #3dd3f8">
+                                    <div class="circle_country" style="background-color: #3dd3f8">6</div>
+                                </div>
+                                <div class="col-md-6" style="margin-left: 20px;background-color: rgba(8,158,195,0.2);text-align:center;color: #3dd3f8">四川</div>
+                            </div>
+                            <div class="row" style="margin-bottom: 5px;margin-top: 10px;line-height:20px;">
+                                <div class="col-md-6" style="width: 15%;text-align:center;vertical-align:middle;line-height:25px;color: #3dd3f8">
+                                    <div class="circle_country" style="background-color: #3dd3f8">7</div>
+                                </div>
+                                <div class="col-md-6" style="margin-left: 20px;background-color: rgba(8,158,195,0.2);text-align:center;color: #3dd3f8">山东</div>
+                            </div>
+                            <div class="row" style="margin-bottom: 5px;margin-top: 10px;line-height:20px;">
+                                <div class="col-md-6" style="width: 15%;text-align:center;vertical-align:middle;line-height:25px;color: #3dd3f8">
+                                    <div class="circle_country" style="background-color: #3dd3f8">8</div>
+                                </div>
+                                <div class="col-md-6" style="margin-left: 20px;background-color: rgba(8,158,195,0.2);text-align:center;color: #3dd3f8">陕西</div>
+                            </div>
+                       </div>
+
+                        <div class="col-lg-6" id="div-center-right" style="width: 70%;max-height: 270px">
+                        </div>
+                    </div>
+                </div>
+                <div style="font-size: 18px;max-height: 50px;padding-bottom:8px;padding-top:8px;color: #f2b04a;font-family:Fantasy;"> 消费人群</div>
+                <div class="cao_charts_right_container_3"  id="cao_charts_right_3" ></div>
+            </div>
+        </div>
+
+    </div>
+
+
+<script src="js/cao-center-left.js"></script>
+<script src="js/cao-bottom-right.js"></script>
+<script src="js/cao-center-right.js"></script>
+<script src="js/cao-bottom-left.js"></script>
+<script src="js/cao-top-right.js"></script>
+<script src="js/cao-top-left.js"></script>
+<script src="js/cao-center-chart.js"></script>
+<script src="js/cao-bottom-right-1.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<!--动态加载数据文件-->
+<script src="js/setData/setData-shop-ranking.js"></script>
+<script src="js/setData/setData-all-amt.js"></script>
+<script src="js/setData/setData-x-time.js"></script>
+
+
+<script src="js/index.js"></script>
+<script type="text/javascript">
+
+    loadInit();
+
+</script>
+
+</body>
+</html>

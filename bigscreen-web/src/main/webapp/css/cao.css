@@ -1,0 +1,151 @@
+body{
+    margin: 0px;padding: 0px;
+    background-image:url(../images/bg2.jpg);
+
+    /*background-color: #031f2d;*/
+    background-repeat:repeat;
+    background-size:100% 100%;
+    -moz-background-size:100% 100%;
+}
+
+div{
+    margin: 0px;padding: 0px;
+}
+
+.cao_charts_title{
+    height:550px;
+    background: url(../images/4.png) no-repeat center top;
+    background-size:100% 310px;
+}
+
+.cao_charts_left{
+    padding-top: 4em;
+    text-align: left;
+    background: url(../images/title-left.png) no-repeat right top;
+    background-size:50% 200px;
+}
+
+.cao_charts_right{
+    text-align: right;
+    padding-top: 4em;
+    background: url(../images/title-right.png) no-repeat left top;
+    background-size:50% 200px;
+
+
+}
+
+.cao_charts_left_container_1{
+
+     padding-left: 3em;
+     padding-right: 3em;
+     padding-top: 1em;
+     position:relative;
+     /*-webkit-border-bottom-right-radius:0px;
+     background:linear-gradient(-45deg, transparent 15px, rgba(29,59,83,0)  0);*/
+     box-shadow: -1px 0 2px #2c1f5f,0 -1px 2px #2c1f5f,0 1px 2px #2c1f5f,1px 0 2px #2c1f5f;
+ }
+.cao_charts_left_container_2{
+
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    position:relative;
+    /*-webkit-border-bottom-right-radius:0px;
+    background:linear-gradient(-45deg, transparent 15px, rgba(29,59,83,0)  0);*/
+    box-shadow: -1px 0 5px #2c1f5f,0 -1px 5px #2c1f5f,0 1px 5px #2c1f5f,1px 0 5px #2c1f5f;
+}
+.cao_charts_left_container_3{
+
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    position:relative;
+    /*-webkit-border-bottom-right-radius:0px;
+    background:linear-gradient(-45deg, transparent 15px, rgba(29,59,83,0)  0);*/
+    box-shadow: -1px 0 5px #2c1f5f,0 -1px 5px #2c1f5f,0 1px 5px #2c1f5f,1px 0 5px #2c1f5f;
+}
+
+
+.cao_charts_right_container_1{
+    height: 274px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*-webkit-border-bottom-right-radius:0px;
+    background:linear-gradient(-45deg, transparent 15px, rgba(29,59,83,0)  0);*/
+    box-shadow: -1px 0 5px #2c1f5f,0 -1px 5px #2c1f5f,0 1px 5px #2c1f5f,1px 0 5px #2c1f5f;
+}
+
+.cao_charts_right_container_2{
+    height: 374px;
+    padding-left: 3em;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    /*-webkit-border-bottom-right-radius:0px;
+    background:linear-gradient(-45deg, transparent 15px, rgba(29,59,83,0)  0);*/
+    box-shadow: -1px 0 5px #2c1f5f,0 -1px 5px #2c1f5f,0 1px 5px #2c1f5f,1px 0 5px #2c1f5f;
+}
+
+.cao_charts_right_container_3{
+    height: 234px;
+    padding-left: 5px;
+
+    padding-bottom: 5px;
+
+    /*-webkit-border-bottom-right-radius:0px;
+    background:linear-gradient(-45deg, transparent 15px, rgba(29,59,83,0)  0);*/
+    box-shadow: -1px 0 5px #2c1f5f,0 -1px 5px #2c1f5f,0 1px 5px #2c1f5f,1px 0 5px #2c1f5f;
+}
+
+.cao_charts_center_container{
+    height: 680px;
+    background-image: url(../images/left1.png);
+    /*background-image: url(../images/left1.png);*/
+    background-repeat: no-repeat ;
+    background-size:620px 550px;
+
+
+    background-position: center;
+    /*-webkit-border-bottom-right-radius:0px;
+    background:linear-gradient(-45deg, transparent 15px, rgba(29,59,83,0)  0);*/
+    /*box-shadow: -1px 0 5px #291d5c,0 -1px 5px #291d5c,0 1px 5px #291d5c,1px 0 5px #291d5c;*/
+}
+
+
+
+  .circle{
+      width:20px;
+      height:20px;
+      margin-top: 5px;
+      background-color:#3dd3f8;
+      border-radius:50px;
+      color: #030942;
+
+    /*CSS3 中垂直居中-*/
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+}
+
+.circle_country{
+    width:20px;
+    height:20px;
+    margin-top: 0px;
+    background-color:#3dd3f8;
+    border-radius:50px;
+    color: #030942;
+
+    /*CSS3 中垂直居中-*/
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bigscreen-1809.iml" filepath="$PROJECT_DIR$/bigscreen-1809.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigscreen-calc/bigscreen-calc.iml" filepath="$PROJECT_DIR$/bigscreen-calc/bigscreen-calc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigscreen-common/bigscreen-common.iml" filepath="$PROJECT_DIR$/bigscreen-common/bigscreen-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bigscreen-web/bigscreen-web.iml" filepath="$PROJECT_DIR$/bigscreen-web/bigscreen-web.iml" />
+    </modules>
+  </component>
+</project>

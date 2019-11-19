@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.desheng.bigdata</groupId>
+  <artifactId>bigscreen-1809</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>bigscreen-common</module>
+    <module>bigscreen-calc</module>
+    <module>bigscreen-web</module>
+  </modules>
+  <packaging>pom</packaging>
+
+  <name>bigscreen-1809 Maven Webapp</name>
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spark.version>2.2.2</spark.version>
+    <hadoop.version>2.6.4</hadoop.version>
+    <scala.version>2.11.8</scala.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+      </dependency>
+      <!-- 开发spark作业的需要-->
+      <dependency>
+        <groupId>org.scala-lang</groupId>
+        <artifactId>scala-library</artifactId>
+        <version>${scala.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.scala-lang</groupId>
+        <artifactId>scala-compiler</artifactId>
+        <version>${scala.version}</version>
+      </dependency>
+      <!-- sparkcore-->
+      <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-core_2.11</artifactId>
+        <version>${spark.version}</version>
+      </dependency>
+      <!-- sparksql-->
+      <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-sql_2.11</artifactId>
+        <version>${spark.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <!--sparksql-hive-->
+      <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-hive_2.11</artifactId>
+        <version>${spark.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <!-- spark streaming-->
+      <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-streaming_2.11</artifactId>
+        <version>${spark.version}</version>
+      </dependency>
+      <!-- spark-streaming-kafka-0-8_2.11-->
+      <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-streaming-kafka-0-10_2.11</artifactId>
+        <version>2.2.2</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-client</artifactId>
+        <version>${hadoop.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>5.1.39</version>
+      </dependency>
+
+      <!-- scala操作数据库 -->
+      <dependency>
+        <groupId>org.scalikejdbc</groupId>
+        <artifactId>scalikejdbc_2.11</artifactId>
+        <version>3.2.0</version>
+        <scope>provided</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>commons-collections</groupId>
+        <artifactId>commons-collections</artifactId>
+        <version>3.2.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>1.2.4</version>
+      </dependency>
+
+      <!-- 使用websocket-->
+      <dependency>
+        <groupId>javax</groupId>
+        <artifactId>javaee-api</artifactId>
+        <version>7.0</version>
+      </dependency>
+      <!-- 计算结果落地到HBase -->
+      <dependency>
+        <groupId>org.apache.hbase</groupId>
+        <artifactId>hbase-client</artifactId>
+        <version>1.1.5</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <finalName>bigscreen-1809</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
