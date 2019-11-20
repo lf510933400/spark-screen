@@ -5,7 +5,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.kafka.common.TopicPartition
 import org.apache.spark.streaming.StreamingContext
 import org.apache.spark.streaming.dstream.InputDStream
-import org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, LocationStrategies}
+import org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, LocationStrategies, OffsetRange}
 
 import scala.collection.{JavaConversions, mutable}
 
@@ -72,6 +72,7 @@ object KafkaManager {
                 (new TopicPartition(topic, partition.toInt), offset)
             }*/
         }
+
         map.toMap
     }
 
