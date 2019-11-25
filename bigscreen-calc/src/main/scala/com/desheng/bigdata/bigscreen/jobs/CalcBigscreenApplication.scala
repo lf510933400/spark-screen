@@ -225,6 +225,7 @@ object CalcBigscreenApplication {
     })
   }
     val curator = {
+      print("提交到github测试-------------")
         val client = CuratorFrameworkFactory.builder()
                         .namespace("mykafka")
                         .connectString("hadoop01:2181,hadoop02:2181,hadoop03:2181")
