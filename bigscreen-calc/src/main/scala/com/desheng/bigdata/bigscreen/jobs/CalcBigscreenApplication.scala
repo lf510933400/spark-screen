@@ -95,6 +95,7 @@ object CalcBigscreenApplication {
                 s"${time}^${product}^${productName}^${price}^${shopId}^${shopName}"
             }
         })
+      //将rdd缓存起来提高效率
         baseRDD.cache
 
        processAllAmt(baseRDD)
